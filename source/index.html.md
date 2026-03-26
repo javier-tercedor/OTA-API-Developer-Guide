@@ -2764,7 +2764,8 @@ Version="1.0"
                     <GuaranteeAccepted>
                       <PaymentCard CardNumber="1111222233334444" ExpireDate="1219"
                              SeriesCode="123" CardType="MC"
-                             CardCode="VCC" CardHolderName="WEEKENDESK"/>
+                             CardCode="VCC" CardHolderName="WEEKENDESK"
+                             VCCAmount="232.75 EUR"/>
                     </GuaranteeAccepted>
                 </GuaranteesAccepted>
             </Guarantee>
