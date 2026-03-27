@@ -51,4 +51,16 @@ Now that `OTA-API-Developer-Guide` is all set up on your machine, you'll probabl
 ### Deploy to production
 
 - Upload the generated files to the `gh-pages` branch.
-- After that github will upload automatically the changes to the [public domain](https://ota-doc.weekendesk.com/#introduction) 
+- After that github will upload automatically the changes to the [public domain](https://ota-doc.weekendesk.com/#introduction)
+
+### Deploy to production (Apple Silicon / arm64)
+
+Make sure your changes are merged into `master`, then run:
+
+```shell
+./deploy-arm64.sh
+```
+
+This script builds the documentation site inside a Docker container (required for compatibility with arm64 Macs) and publishes the generated files to the `gh-pages` branch, which GitHub Pages serves as the public site at [ota-doc.weekendesk.com](https://ota-doc.weekendesk.com).
+
+> Prerequisites: [Docker Desktop](https://www.docker.com/products/docker-desktop/) must be running.
