@@ -2577,7 +2577,8 @@ CountryName | CDATA | Country of the customer
              <GuaranteeAccepted>
                  <PaymentCard CardNumber="1111222233334444" ExpireDate="1219"
                               SeriesCode="123" CardType="MC"
-                              CardCode="VCC" CardHolderName="WEEKENDESK"/>
+                              CardCode="VCC" CardHolderName="WEEKENDESK"
+                              VCCAmount="232.75 EUR"/>
              </GuaranteeAccepted>
          </GuaranteesAccepted>
      </Guarantee>
@@ -2607,11 +2608,12 @@ SeriesCode | integer | CVV – Security number
 CardType | string | Type of the credit card (MC=Mastercard)
 CardCode | string | Type of card - always VCC (Virtual Credit Card)
 CardHolderName | string | Card Holder Name
+VCCAmount | string | Amount that should be charged to the card.
 
 
 ### Booking Response
 
-> The above request sent to the ChannelManager partner should the following  XML:
+> The above request sent to the ChannelManager partner should be the following XML:
 
 ```xml
 <OTA_HotelResRS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -2828,7 +2830,7 @@ ResID_Date | date | TimeStamp of integration of the cancellation
 
 ### Cancel Response
 
-> The above request sent to the ChannelManager partner should the following XML :
+> The above request sent to the ChannelManager partner should be the following XML:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
